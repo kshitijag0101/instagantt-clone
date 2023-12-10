@@ -133,7 +133,7 @@ export default function Login() {
                         </p>
                         <div className="mb-4 hover:text-black text-[#757575]">
                             <Link
-                                href="http://localhost:5000/auth/google"
+                                href="https://cute-gold-goose-vest.cyclic.app/auth/google"
                                 className=""
                             >
                                 <div className="flex justify-center gap-4 border rounded text-center py-1">

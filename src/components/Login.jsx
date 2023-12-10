@@ -96,7 +96,7 @@ export default function LoginWindow() {
                     Full version of Instagantt. Don&apos;t know what Asana is,
                     or don&apos;t want to use it with Asana?
                 </p>
-                <div className="px-10 pt-10 pb-14">
+                <div className="px-10 pt-10 pb-14 flex justify-center">
                     <Link
                         href="/login"
                         className=" py-4 px-[122px] bg-[#0c1258] hover:bg-[#3d4179] text-white font-medium rounded-full"

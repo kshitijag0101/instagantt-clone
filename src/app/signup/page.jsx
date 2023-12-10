@@ -129,7 +129,7 @@ export default function SignUp() {
                     </h2>
                     <div className="mb-3 hover:text-black text-[#757575]">
                         <Link
-                            href="http://localhost:5000/auth/google"
+                            href="https://cute-gold-goose-vest.cyclic.app/auth/google"
                             className=""
                         >
                             <div className="flex justify-center gap-4 border rounded px-10 py-1">
