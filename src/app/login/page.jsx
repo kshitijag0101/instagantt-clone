@@ -206,16 +206,6 @@ export default function Login() {
                         >
                             Login
                         </button>
-                        <div className="flex justify-center gap-2 mb-4">
-                            <hr className="text-[#cccccc] w-32 mt-3" />
-                            <h2>Or</h2>
-                            <hr className="text-[#cccccc] w-32 mt-3" />
-                        </div>
-                        <div className="text-center">
-                            <Link href="/" className="text-[#0088cc]">
-                                Reset your password
-                            </Link>
-                        </div>
                     </div>
                     <div className="bg-[#f5f8fb] h-full w-[28%] px-12 grid justify-center place-content-center">
                         <div className="">
