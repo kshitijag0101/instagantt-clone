@@ -31,7 +31,7 @@ export default function Login() {
             localStorage.setItem("userId", userId);
             router.push("/");
         }
-    }, []);
+    });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -220,7 +220,7 @@ export default function Login() {
                     <div className="bg-[#f5f8fb] h-full w-[28%] px-12">
                         <div className="my-72">
                             <h2 className="text-2xl text-[#61657d] font-normal text-center mb-4">
-                                Don't have an account?
+                                Don&apos;t have an account?
                             </h2>
                             <div className="text-center">
                                 <Link

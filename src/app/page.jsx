@@ -103,7 +103,12 @@ export default function Home() {
             <div className="w-20 bg-white h-full min-h-screen flex flex-col justify-between border-r ">
                 <div className="p-4 mx-auto">
                     <div className="mb-4" onClick={() => setProjectList(true)}>
-                        <Image src={"/img/logo.png"} width={50} height={170} />
+                        <Image
+                            src={"/img/logo.png"}
+                            width={50}
+                            height={170}
+                            alt="logo"
+                        />
                     </div>
                     <div
                         className={`mb-8 rounded-xl ${

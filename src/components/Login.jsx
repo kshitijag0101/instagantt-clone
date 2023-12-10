@@ -93,8 +93,8 @@ export default function LoginWindow() {
                     <br /> Standalone
                 </h2>
                 <p className="text-black text-center font-normal py-10 px-10">
-                    Full version of Instagantt. Don't know what Asana is, or
-                    don't want to use it with Asana?
+                    Full version of Instagantt. Don&apos;t know what Asana is,
+                    or don&apos;t want to use it with Asana?
                 </p>
                 <div className="px-10 pt-10 pb-14">
                     <Link
