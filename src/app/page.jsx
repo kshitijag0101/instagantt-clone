@@ -10,14 +10,7 @@ import { RxExit } from "react-icons/rx";
 import LoginWindow from "@/components/Login";
 import useAuthContext from "@/hooks/use-auth-hooks";
 import { initTasks, getStartEndDateForProject } from "@/helper";
-import {
-    Gantt,
-    Task,
-    EventOption,
-    StylingOption,
-    ViewMode,
-    DisplayOption,
-} from "gantt-task-react";
+import { Gantt, ViewMode } from "gantt-task-react";
 import "gantt-task-react/dist/index.css";
 
 export default function Home() {
@@ -27,8 +20,6 @@ export default function Home() {
     const [view, setView] = useState(ViewMode.Week);
     const [tasks, setTasks] = useState(initTasks());
     const [isChecked, setIsChecked] = useState(true);
-
-    let columnWidth = 117;
 
     const handleLogout = () => {
         if (isLoggedIn) {
@@ -100,29 +91,30 @@ export default function Home() {
         <LoginWindow />
     ) : (
         <main className="min-h-screen flex">
-            <div className="w-20 bg-white h-full min-h-screen flex flex-col justify-between border-r ">
-                <div className="p-4 mx-auto">
-                    <div className="mb-4" onClick={() => setProjectList(true)}>
+            <div className="w-16 bg-white h-full min-h-screen flex flex-col justify-between border-r ">
+                <div className="mx-auto pt-4 px-2">
+                    <div
+                        className="mb-4 flex justify-center"
+                        onClick={() => setProjectList(true)}
+                    >
                         <Image
                             src={"/img/logo.png"}
-                            width={50}
-                            height={170}
+                            width={38}
+                            height={150}
                             alt="logo"
                         />
                     </div>
                     <div
-                        className={`mb-8 rounded-xl ${
-                            projectList ? "bg-[#090b38] text-white" : ""
-                        }`}
+                        className={`mb-4 rounded-xl`}
                         onClick={() => setProjectList(true)}
                     >
-                        <LuFileText className="h-12 w-12 pl-1 py-2" />
+                        <LuFileText className="h-12 w-12  py-2" />
                     </div>
-                    <div className="mb-8 rounded-xl">
-                        <PiGraduationCap className="h-12 w-12 pl-1 py-2" />
+                    <div className="mb-4 rounded-xl">
+                        <PiGraduationCap className="h-12 w-12 py-2" />
                     </div>
-                    <div className="mb-8  rounded-xl">
-                        <LiaIdCardSolid className=" h-12 w-12 pl-1 py-2" />
+                    <div className="mb-4  rounded-xl">
+                        <LiaIdCardSolid className=" h-12 w-12 py-2" />
                     </div>
                 </div>
                 <div className="mx-auto">
@@ -152,8 +144,8 @@ export default function Home() {
                         onSelect={handleSelect}
                         onExpanderClick={handleExpanderClick}
                         listCellWidth={isChecked ? "155px" : ""}
-                        ganttHeight={500}
-                        columnWidth={columnWidth}
+                        ganttHeight={350}
+                        columnWidth={81}
                     />
                 </div>
             </div>

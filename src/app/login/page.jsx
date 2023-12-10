@@ -43,7 +43,7 @@ export default function Login() {
             <div className="h-screen bg-[url('/img/hero.jpg')] bg-cover">
                 <div className="flex justify-center h-full">
                     <div className="bg-white h-full w-[28%] px-12">
-                        <div className="mx-auto w-fit py-10">
+                        <div className="mx-auto w-fit pt-8 pb-4">
                             <svg
                                 width="173"
                                 height="44"
@@ -127,16 +127,16 @@ export default function Login() {
                                 />
                             </svg>
                         </div>
-                        <h2 className="text-black text-2xl mt-4 mb-4">Login</h2>
-                        <p className="text-[#61657d] text-sm mb-6">
+                        <h2 className="text-black text-2xl mt-4 mb-2">Login</h2>
+                        <p className="text-[#61657d] text-sm mb-4">
                             User your email address to access your account
                         </p>
-                        <div className="mb-6 hover:text-black text-[#757575]">
+                        <div className="mb-4 hover:text-black text-[#757575]">
                             <Link
                                 href="http://localhost:5000/auth/google"
                                 className=""
                             >
-                                <div className="flex justify-center gap-4 border rounded px-10 py-1">
+                                <div className="flex justify-center gap-4 border rounded text-center py-1">
                                     <div className="mt-1">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ export default function Login() {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center gap-2 mb-6">
+                        <div className="flex justify-center gap-2 mb-4">
                             <hr className="text-[#cccccc] w-32 mt-3" />
                             <h2>Or</h2>
                             <hr className="text-[#cccccc] w-32 mt-3" />
@@ -201,12 +201,12 @@ export default function Login() {
                             className="w-full h-9 mb-4 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
                         />
                         <button
-                            className="mb-6 w-full py-2 rounded-md text-white font-medium bg-[#006dcc] hover:bg-[#0044cc]"
+                            className="mb-4 w-full py-2 rounded-md text-white font-medium bg-[#006dcc] hover:bg-[#0044cc]"
                             onClick={handleSubmit}
                         >
                             Login
                         </button>
-                        <div className="flex justify-center gap-2 mb-6">
+                        <div className="flex justify-center gap-2 mb-4">
                             <hr className="text-[#cccccc] w-32 mt-3" />
                             <h2>Or</h2>
                             <hr className="text-[#cccccc] w-32 mt-3" />
@@ -217,8 +217,8 @@ export default function Login() {
                             </Link>
                         </div>
                     </div>
-                    <div className="bg-[#f5f8fb] h-full w-[28%] px-12">
-                        <div className="my-72">
+                    <div className="bg-[#f5f8fb] h-full w-[28%] px-12 grid justify-center place-content-center">
+                        <div className="">
                             <h2 className="text-2xl text-[#61657d] font-normal text-center mb-4">
                                 Don&apos;t have an account?
                             </h2>

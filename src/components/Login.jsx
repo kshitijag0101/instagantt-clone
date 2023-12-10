@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function LoginWindow() {
     return (
-        <main className="h-screen place-items-center py-24 bg-gradient-to-r from-[#3582f5] to-[#fb3994]">
-            <div className="mx-auto w-[23%] bg-white place-items-center rounded-3xl drop-shadow-2xl">
+        <main className="h-screen flex justify-center place-items-center  bg-gradient-to-r from-[#3582f5] to-[#fb3994]">
+            <div className="mx-auto w-[27%] bg-white place-items-center rounded-3xl drop-shadow-2xl">
                 <div className="mx-auto w-fit py-10">
                     <svg
                         width="173"

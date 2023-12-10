@@ -40,7 +40,7 @@ export default function SignUp() {
         !isLoggedIn && (
             <div className="h-screen bg-[url('/img/hero.jpg')] bg-cover flex items-center justify-center">
                 <div className="bg-white w-1/3 px-12 m-auto rounded-md">
-                    <div className="mx-auto w-fit py-10">
+                    <div className="mx-auto w-fit pt-6 pb-4">
                         <svg
                             width="173"
                             height="44"
@@ -124,10 +124,10 @@ export default function SignUp() {
                             />
                         </svg>
                     </div>
-                    <h2 className="text-black font-normal text-center text-2xl mt-4 mb-10">
+                    <h2 className="text-black font-normal text-center text-2xl mt-4 mb-3">
                         Create your account
                     </h2>
-                    <div className="mb-6 hover:text-black text-[#757575]">
+                    <div className="mb-3 hover:text-black text-[#757575]">
                         <Link
                             href="http://localhost:5000/auth/google"
                             className=""
@@ -165,7 +165,7 @@ export default function SignUp() {
                             </div>
                         </Link>
                     </div>
-                    <div className="flex justify-center gap-2 mb-6">
+                    <div className="flex justify-center gap-2 mb-2">
                         <hr className="text-[#cccccc] w-32 mt-3" />
                         <h2>Or</h2>
                         <hr className="text-[#cccccc] w-32 mt-3" />
@@ -194,7 +194,7 @@ export default function SignUp() {
                                 name="name"
                                 onChange={handleNameChange}
                                 type="text"
-                                className="w-full h-9 mb-4 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
+                                className="w-full h-9 mb-2 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
                             />
                             <label
                                 htmlFor="Password"
@@ -207,7 +207,7 @@ export default function SignUp() {
                                 name="password"
                                 onChange={handlePasswordChange}
                                 type="password"
-                                className="w-full h-9 mb-4 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
+                                className="w-full h-9 mb-2 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
                             />
                             <label
                                 htmlFor="RepeatPassword"
@@ -220,7 +220,7 @@ export default function SignUp() {
                                 name="rpassword"
                                 onChange={handleRepeatPasswordChange}
                                 type="password"
-                                className="w-full h-9 mb-4 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
+                                className="w-full h-9 mb-2 border rounded-md boder-gray-300 focus:ring-1 focus:ring-blue-300 outline-none px-2"
                             />
                             <button
                                 className="mb-6 w-full py-2 rounded-md text-white font-medium bg-[#006dcc] hover:bg-[#0044cc]"
