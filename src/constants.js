@@ -1,4 +1,4 @@
-export const API_DOMAIN = "http://localhost:5000";
+export const API_DOMAIN = NEXT_PUBLIC_API;
 const BASE_USER_API = API_DOMAIN + "/auth";
 
 export const USER_URL = {
